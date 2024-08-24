@@ -5,8 +5,8 @@
 
 @section('content')
 
-  
-    <div class="breadcumb-wrapper" data-bg-src="{{asset('assets/img/blog/blog_1_3.jpg')}}">
+
+    <div class="breadcumb-wrapper" data-bg-src="{{asset('assets/img/bg/bg17.jpg')}}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">CREATE NEW ACCOUNT</h1>

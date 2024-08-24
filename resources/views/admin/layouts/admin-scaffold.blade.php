@@ -25,7 +25,14 @@
       @stack('styles')
    </head>
    <body>
-
+    <style>
+        .layout-page{
+            background-image: url('{{ asset('assets/img/bg/bg27.jpg') }}');
+        }
+        .layout-page{
+            background-size: cover;
+        }
+    </style>
     <div class="layout-wrapper layout-content-navbar  ">
         <div class="layout-container">
            @yield('content')
@@ -33,7 +40,7 @@
               @include('admin.partial.header')
             </div>
         </div>
-        @include('admin.partial.footer')
+        {{-- @include('admin.partial.footer') --}}
      @include('admin.partial.script')
      @stack('scripts')
    </body>

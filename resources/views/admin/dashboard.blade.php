@@ -2,13 +2,6 @@
 @push('title')
 {{ $title ?? '' }}
 @endpush
-@push('styles')
-    <style>
-        body{
-            background-color: #0B0E13;
-        }
-    </style>
-@endpush
 @section('content')
 <div class="layout-page">
     <div class="content-wrapper">
@@ -16,7 +9,8 @@
         <div class="row">
             <!-- Website Analytics -->
             <div   class="col-lg-6 mb-4">
-              <div style="background-color: black;border:#30E36D 2px groove" class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" id="swiper-with-pagination-cards">
+              <div style="background-color: #1F2120
+              ;border:#30E36D 2px groove" class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden" id="swiper-with-pagination-cards">
                 <div class="swiper-wrapper" id="swiper-wrapper-b4c76e08c6569311" aria-live="off" style="transform: translate3d(-1782px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="2" style="width: 594px;" role="group" aria-label="3 / 3">
                     <div class="row">
                       <div class="col-12">
@@ -181,7 +175,8 @@
                   </div>
                 <div  class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 3" style="width: 594px;">
                     <div class="row">
-                      <div style="background-color: black;border:#30E36D 2px groove" class="col-12">
+                      <div style="background-color: #1F2120
+                      ;border:#30E36D 2px groove" class="col-12">
                         <h5 style="color: #0B0E13" class="text-white mb-0 mt-2">Website Analytics</h5>
                         <small style="color: #0B0E13"> Total 28.5% Conversion Rate</small>
                       </div>
@@ -228,7 +223,8 @@
 
             <!-- Sales Overview -->
             <div  class="col-lg-3 col-sm-6 mb-4">
-              <div style="background-color: black;border:#30E36D 2px groove" class="card">
+              <div style="background-color: #1F2120
+              ;border:#30E36D 2px groove" class="card">
                 <div class="card-header">
                   <div class="d-flex justify-content-between">
                     <small style="color: white" class="d-block mb-1 text-muted">Sales Overview</small>
@@ -275,7 +271,8 @@
 
             <!-- Revenue Generated -->
             <div class="col-lg-3 col-md-6 col-sm-6 mb-4">
-                <div style="background-color: black;border:#30E36D 2px groove;color:white" class="card" >
+                <div style="background-color: #1F2120
+                ;border:#30E36D 2px groove;color:white" class="card" >
                   <div class="card-body pb-0">
                     <div class="card-icon">
                       <span class="badge bg-label-success rounded-pill p-2">

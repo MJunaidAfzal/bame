@@ -19,7 +19,10 @@ Admin Login
 <body>
     <style>
         body {
-        background-color: #0B0E13;
+            background-image: url('{{ asset('assets/img/bg/bg27.jpg') }}');
+        }
+        body {
+            background-size: cover;
         }
         .card{
             background-color: #0B0E13;

@@ -4,8 +4,8 @@
 @endpush
 
 @section('content')
- 
-    <div class="breadcumb-wrapper" data-bg-src="{{asset('assets/img/video/1-2.png')}}">
+
+    <div class="breadcumb-wrapper" data-bg-src="{{asset('assets/img/bg/bg21.jpg')}}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">SIGN IN HERE</h1>
@@ -69,7 +69,7 @@
         </div>
     </div>
     </div>
-  
+
     <div class="scroll-top"><svg class="progress-circle svg-content" width="100%" height="100%" viewbox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
                 style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">

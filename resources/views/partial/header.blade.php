@@ -59,49 +59,34 @@
                     <div class="col-auto">
                         <nav class="main-menu d-none d-lg-inline-block">
                             <ul>
-                                <li class="menu-item-has-children"><a href="index.html.htm">HOME</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="index.html.htm">Home Esports</a></li>
-                                        <li><a href="home-2.html.htm">Home Streaming</a></li>
-                                        <li><a href="home-3.html.htm">Home Video Gaming</a></li>
-                                        <li><a href="home-4.html.htm">Home Tournament</a></li>
-                                        <li><a href="home-5.html.htm">Home Gamer</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="about.html.htm">ABOUT US</a></li>
-                                <li class="menu-item-has-children"><a href="#">TOURNAMENT</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="tournament.html.htm">Tournament</a></li>
-                                        <li><a href="tournament-details.html.htm">Tournament Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="menu-item-has-children"><a href="#">BLOG</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="blog.html.htm">Blog</a></li>
-                                        <li><a href="blog-details.html.htm">Blog Details</a></li>
-                                    </ul>
+                                <li class="menu-item"><a href="{{ route('index') }}">HOME</a>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">PAGES</a>
                                     <ul class="sub-menu">
-                                        <li class="menu-item-has-children"><a href="#">Shop</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="shop.html.htm">Shop</a></li>
-                                                <li><a href="shop-details.html.htm">Shop Details</a></li>
-                                                <li><a href="cart.html.htm">Cart Page</a></li>
-                                                <li><a href="checkout.html.htm">Checkout</a></li>
-                                                <li><a href="wishlist.html.htm">Wishlist</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="team.html.htm">Players</a></li>
-                                        <li><a href="team-details.html.htm">Players Details</a></li>
-                                        <li><a href="game.html.htm">Game</a></li>
-                                        <li><a href="game-details.html.htm">Game Details</a></li>
-                                        <li><a href="gallery.html.htm">Gallery</a></li>
-                                        <li><a href="point-table.html.htm">Point Table</a></li>
-                                        <li><a href="error.html.htm">Error Page</a></li>
+
+                                        <li><a href="{{ route('players') }}">Players</a></li>
+                                        <li><a href="{{ route('gallery') }}">Gallery</a></li>
+                                        <li><a href="{{ route('points-table') }}">Point Table</a></li>
+                                        <li><a href="{{ route('about-us') }}">About Us</a></li>
+                                        <li><a href="{{ route('contact-us') }}">Contact Us</a></li>
+                                    @guest
+                                    <li><a href="{{ route('login') }}">Login</a></li>
+                                    <li><a href="{{ route('register') }}">Register</a></li>
+                                    @endguest
+                                    @auth
+                                    <li><a href="{{ route('wishlist') }}">Wishlist</a></li>
+                                    <li><a href="{{ route('cart') }}">Cart</a></li>
+                                    @endauth
+
                                     </ul>
                                 </li>
-                                <li><a href="contact.html.htm">CONTACT</a></li>
+                                <li class="menu-item"><a href="{{ route('tournament') }}">TOURNAMENT</a>
+                                    <li class="menu-item"><a href="{{ route('shop') }}">SHOP</a>
+                                </li>
+                                <li class="menu-item"><a href="{{ route('blog') }}">BLOG</a>
+                                </li>
+
+                                <li><a href="{{ route('game') }}">GAMES</a></li>
                             </ul>
                         </nav>
                         <div class="header-button d-flex d-lg-none"><button type="button"

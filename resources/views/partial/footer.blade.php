@@ -36,11 +36,11 @@
                         <h3 class="widget_title">Useful Link</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="blog.html.htm"><i class="far fa-angle-right"></i>Gaming</a></li>
-                                <li><a href="blog.html.htm"><i class="far fa-angle-right"></i>Products</a></li>
-                                <li><a href="blog.html.htm"><i class="far fa-angle-right"></i>All NFTs</a></li>
-                                <li><a href="blog.html.htm"><i class="far fa-angle-right"></i>Domain Name</a></li>
-                                <li><a href="blog.html.htm"><i class="far fa-angle-right"></i>Social Network</a>
+                                <li><a href="{{ route('players') }}"><i class="far fa-angle-right"></i>Players</a></li>
+                                <li><a href="{{ route('gallery') }}"><i class="far fa-angle-right"></i>Gallery</a></li>
+                                <li><a href="{{ route('points-table') }}"><i class="far fa-angle-right"></i>Points Table</a></li>
+                                <li><a href="{{ route('about-us') }}"><i class="far fa-angle-right"></i>About Us</a></li>
+                                <li><a href="{{ route('contact-us') }}"><i class="far fa-angle-right"></i>Contact Us</a>
                                 </li>
                                 <li><a href="blog.html.htm"><i class="far fa-angle-right"></i>Collectibles</a></li>
                             </ul>
@@ -52,17 +52,22 @@
                         <h3 class="widget_title">Supports</h3>
                         <div class="menu-all-pages-container">
                             <ul class="menu">
-                                <li><a href="contact.html.htm"><i class="far fa-angle-right"></i> Help & Support</a>
+                                <li><a href="{{ route('tournament') }}"><i class="far fa-angle-right"></i> Tournament</a>
                                 </li>
-                                <li><a href="contact.html.htm"><i class="far fa-angle-right"></i> Live Auctions</a>
+                                <li><a href="{{ route('shop') }}"><i class="far fa-angle-right"></i> Shop</a>
                                 </li>
-                                <li><a href="contact.html.htm"><i class="far fa-angle-right"></i> 24/7 Supports</a>
+                                <li><a href="{{ route('blog') }}"><i class="far fa-angle-right"></i> Blog</a>
                                 </li>
-                                <li><a href="contact.html.htm"><i class="far fa-angle-right"></i> Item Details</a>
+                                <li><a href="{{ route('game') }}"><i class="far fa-angle-right"></i> Games</a>
                                 </li>
-                                <li><a href="contact.html.htm"><i class="far fa-angle-right"></i> Setting &
-                                        Privacy</a></li>
-                                <li><a href="contact.html.htm"><i class="far fa-angle-right"></i> Our News</a></li>
+                                @guest
+                                <li><a href="{{ route('login') }}"><i class="far fa-angle-right"></i> Login</a></li>
+                                <li><a href="{{ route('register') }}"><i class="far fa-angle-right"></i> Register</a></li>
+                                @endguest
+                                @auth
+                                <li><a href="{{ route('wishlist') }}"><i class="far fa-angle-right"></i> Wishlist</a></li>
+                                <li><a href="{{ route('cart') }}"><i class="far fa-angle-right"></i> Cart</a></li>
+                                @endauth
                             </ul>
                         </div>
                     </div>

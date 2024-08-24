@@ -6,7 +6,10 @@
     left: -5rem;
     }
     aside{
-        background-color: #0B0E13;
+        background-image: url('{{ asset('assets/img/bg/bg28.jpg') }}');
+    }
+    aside{
+        background-size: cover;
     }
     </style>
     <link rel="stylesheet" href="{{asset('assets/fonts/remixicon.css')}}">
@@ -42,12 +45,12 @@
             </a>
           </li>
 
-          <li @if(url()->current() == Route::is('#')) class="menu-item" @endif class="menu-item">
+          {{-- <li @if(url()->current() == Route::is('#')) class="menu-item" @endif class="menu-item">
             <a href="#" class="mt-2 menu-link">
               <i style="margin-right: 10px;" class="fa fa-user"></i>
               <div>Users</div>
             </a>
-          </li>
+          </li> --}}
 
 
 

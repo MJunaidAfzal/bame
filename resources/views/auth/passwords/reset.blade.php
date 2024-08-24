@@ -6,7 +6,7 @@
 @section('content')
 
 
-    <div class="breadcumb-wrapper" data-bg-src="{{asset('assets/img/gallery/gallery_3_3.jpg')}}">
+    <div class="breadcumb-wrapper" data-bg-src="{{asset('assets/img/bg/bg19.webp')}}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">CREATE NEW PASSWORD</h1>
